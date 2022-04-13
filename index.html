@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First-document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!---Navbar section--->
+    <div class="navbar">
+        <a href="/" id="navbar__logo">NEXT</a>
+        <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+
+            <li class="navbar__btn">
+                <div class="button" onclick="triggerButton('modal')">Sign In</div>
+            </li>
+            <li class=" navbar__btn">
+                <div class="button" onclick="triggerButton('second_modal')">Sign Up</div>
+            </li>
+            <li class="navbar__btn">
+                <a href="/" class="navbar__links">About Us</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- hello section-->
+    <div class="main__container">
+        <div class="main__content">
+            <h1>NEXT GENERATION</h1>
+            <h2>TECHNOLOGY</h2>
+            <p>See What Makes Up Different.</p>
+            <button class="main__btn"><a href="/">Get Started</a></button>
+        </div>
+        <div class="main__img--container">
+            <img src="images/pic1.svg" alt="pic" id="main__img" />
+        </div>
+    </div>
+
+    <!-- second section-->
+
+    <div class="page">
+        <div class="paragra">
+            <h1 class="head"> WELCOME </h1>
+            <p class="para"> Aqua is a Danish Europop music group, best known for their 1997 multi-platinum crossover
+                single "Barbie Girl".
+                The group formed in 1989 and achieved crossover success around the globe in the late 1990s and early
+                2000s.
+                The group released three albums: Aquarium in 1997, Aquarius in 2000 and Megalomania in 2011.</p><br><br>
+        </div>
+        <div class="paragraphy">
+            <div class="spea">
+                <img src="images/online-loans.jpg" alt="test">
+                <h1>Get a loan</h1>
+                <p> Yoga is a group of physical,
+                    mental, and spiritual practices
+                    or disciplines that originated
+                    in ancient India, aimed at
+                    controlling and stilling
+                </p>
+            </div>
+            <div class="beauty">
+
+                <img src="images/customer.jpg" alt="test">
+                <h1>Customer service</h1>
+                <p>Yoga is a group of physical, mental, and spiritual practices or<br> disciplines that originated in
+                    ancient India, aimed at controlling and stilling the mind, and recognizing the detached
+                    'witness-consciousness</p>
+            </div>
+            <div class="yoga">
+
+                <img src="images/secured-money.jpg" alt="test">
+                <h1>Monye security</h1>
+                <p>Yoga is a group of physical, mental, and spiritual practices or <br>disciplines that originated in
+                    ancient India, aimed at controlling and stilling the mind, and recognizing the detached
+                    'witness-consciousnes</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section-->
+    <div class="bottom_footer">
+        <p> Next Copyright ©2022 by Leonce IRANYUMVA</p>
+    </div>
+    <div class="modal" id="modal">
+        <form action="post" class="form-action">
+            <h2>Please Sign-In</h2>
+            <div>
+                <label for="Email" style="font-size: 18px; font-weight: bold;">Email</label>
+                <input type="email" placeholder="Enter Email">
+            </div>
+            <div>
+                <label for="Password" style="font-size: 18px; font-weight: bold;">Password</label>
+                <input type="password" placeholder="Enter Password">
+            </div>
+            <div>
+                <label for="check-for-me" style="font-size: 20px; font-weight: bold;">Please remember me</label>
+                <input type="checkbox">
+            </div>
+            <button type="submit" id="submit" class="btn">Sign-in</button>
+            <div id="close-modal" class="btn-second" onclick="closeModalTest('modal')">Cancel</div>
+
+        </form>
+    </div>
+    <div class="second_modal" id="second_modal">
+        <form action="post" class="form-action">
+            <h2>Please Sign-UP</h2>
+            <div>
+                <label for="Fname" style="font-size: 18px; font-weight: bold;">First Name</label>
+                <input type="text" placeholder="Enter First name">
+            </div>
+            <div>
+                <label for="Lname" style="font-size: 18px; font-weight: bold;">Last Name</label>
+                <input type="text" placeholder="Enter Last name">
+            </div>
+            <div>
+                <label for="Email" style="font-size: 18px; font-weight: bold;">Email</label>
+                <input type="email" placeholder="Enter Email">
+            </div>
+            <div>
+                <label for="Password" style="font-size: 18px; font-weight: bold;">Password</label>
+                <input type="password" placeholder="Enter Password">
+            </div>
+            <div>
+                <label for="phonenumber" style="font-size: 18px; font-weight: bold;">Telephone</label>
+                <input type="number" placeholder="Enter phone number">
+            </div>
+            <button type="submit" id="submit" class="btn">Sign-Up</button>
+            <div id="close-modal" class="btn-second" onclick="closeModalTest('second_modal')">Cancel</div>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
